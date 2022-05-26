@@ -1,0 +1,62 @@
+.header {
+    background-color: darkturquoise;
+    color:midnightblue!important;
+    padding-left: 16px;
+}
+.content {
+
+}
+.footer {
+    background-color: darkcyan;
+    color:white;
+}
+.titHeader {
+    display: inline;
+}
+.btMenu {
+    width: 100%;
+    color: white!important;
+    background-color: darkslategrey!important;
+    text-align: center;
+}
+.btMenu:hover {
+    background-color: white!important;
+    color:blue!important;
+    border: 1px solid grey!important;
+}
+.btMenuOff {
+    width: 100%;
+    color: gray!important;
+    border: 1px solid grey!important;
+    background-color: lightgray!important;
+    text-align: center;
+    cursor: default!important;
+}
+.icoHome {
+    width: 20%;
+    height: auto;
+}
+.txtPeq1 {
+    line-height: 25px;
+}
+.banHome {
+    border: 1px solid midnightblue;
+}
+.btModal {
+    float: right;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .icoHome {
+        width: 20%;
+        height: auto;
+    }
+    .header {
+        height: 120px;
+        text-align: center;
+    }
+    .btModal {
+        float: none;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,23 @@
+
+25/05/2022
+
+Atividade Final da UC - Mobile First
+
+Entrega: 04/06/22
+
+Criar um projeto Front-end que utilize as seguintes tecnologias:
+* HTML;
+* CSS;
+* JQuery Mobile;
+* Bootstrap.
+
+Conteúdo do Projeto:
+Seções que sejam acessadas através de menus do tipo Panel;
+Seções: CMS, SEO, JQuery Mobile, Formulário de Contato com validações.
+
+> Sendo o projeto em formato Single Page do JQuery Mobile.
+
+> A ideia deste projeto o estudo e entendimento da incorporação de todas essas tecnologias em um único Projeto.
+
+> Formato de entrega pode ser via Github ou projeto compactado.
+
