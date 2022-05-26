@@ -1,6 +1,14 @@
 
 .headerMenu {
     text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 120px!important;
+}
+.headerLogo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 120px!important;
 }
 .titPrincipal {
     padding: 55px;
@@ -61,11 +69,12 @@
     .headerMenu {
         text-align: center;
         padding: 12px;
+        padding-right: 12px!important;
     }
-
     .headerLogo {
         text-align: center;
         padding: 12px;
+        padding-left: 12px!important;
     }
     .titPrincipal {
         padding: 16px;

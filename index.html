@@ -11,6 +11,125 @@
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+		
+		/* Valida dados*/
+		
+		function validar(){
+			var nome = formuser.nome.value;
+			var email = formuser.email.value;
+			var telefone = formuser.telefone.value;
+			var endereco = formuser.endereco.value;
+			var senha = formuser.senha.value;
+			var cpf = formuser.cpf.value;
+			
+			
+			if(nome == "" || nome.length <= 5){
+				alert('Informe seu nome completo!');
+				formuser.nome.focus();
+				return false;	
+			}
+			
+			if(email == "" || email.indexOf('@') == -1){
+				alert('Informe e-mail válido');
+				formuser.email.focus();
+				return false;
+			}
+			
+			if(telefone == ""){
+				alert('Informe seu telefone!');
+				formuser.telefone.focus();
+				return false;
+			}
+			
+			if(endereco == ""){
+				alert('Informe seu endereço!');
+				formuser.endereco.focus();
+				return false;
+			
+			}
+			
+			if(senha == "" || senha.length <= 5){
+				alert('Informe senha com no minimo 6 caracteres!');
+				formuser.senha.focus();
+				return false;
+			}
+				
+						
+		}
+		
+			
+		/* Máscaras telefone */
+			function mascara(o,f){
+				v_obj=o
+				v_fun=f
+				setTimeout("execmascara()",1)
+			}
+			function execmascara(){
+				v_obj.value=v_fun(v_obj.value)
+			}
+			function mtel(v){
+				v=v.replace(/\D/g,"");             //Remove tudo o que não é dígito
+				v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+				v=v.replace(/(\d)(\d{4})$/,"$1-$2");    //Coloca hífen entre o quarto e o quinto dígitos
+				return v;
+			}
+			function id( el ){
+				return document.getElementById( el );
+			}
+			window.onload = function(){
+				id('telefone').onkeypress = function(){
+					mascara( this, mtel );
+				}
+			}
+			
+			
+			/* Mascara CPF */
+			
+			function fMasc(objeto,mascara) {
+				obj=objeto
+				masc=mascara
+				setTimeout("fMascEx()",1)
+			}
+			function fMascEx() {
+				obj.value=masc(obj.value)
+			}
+			function mCPF(cpf){
+				cpf=cpf.replace(/\D/g,"")
+				cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
+				cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")
+				cpf=cpf.replace(/(\d{3})(\d{1,2})$/,"$1-$2")
+				return cpf
+			}
+			
+			
+			/* Mascara minusculas*/
+			
+			function minuscula(){
+			
+			var x = document.getElementById("email");
+			x.value = x.value.toLowerCase();
+			}
+			
+			
+			/* Validar senhas */
+			
+			function validarSenha(){
+			var senha = document.formuser.senha.value;
+			var confirma_senha = document.formuser.confirma_senha.value;
+			
+				if (senha == confirma_senha){
+					alert("Ok, senha iguais!");
+				}else{
+					alert("Atenção, senhas diferentes");
+				}
+				
+			}
+			
+		
+		</script>
+
 </head>
 <body>
 
@@ -345,6 +464,36 @@
     
                     <div class="card">
                         <div class="card-body">
+
+                            <form name="formuser" action="#" method="#">
+		
+                                <fieldset>
+                                    <legend><small>Formulário com validação dos campos e máscaras para telefone e CPF:</small></legend>
+                                                
+                                    <p>Nome completo:<input type="text" name="nome" maxlength="40" size="40"></p>
+                                    
+                                    <p> CPF:<input type="text" name="cpf" onkeydown="javascript:fMasc( this, mCPF);" maxlength="14" size="14"> </p>
+                                    
+                                    <p>E-mail:<input type="text" name="email" id="email" onkeyup="minuscula()" maxlength="40" size="35"></p>
+                                    <p>Telefone:<input type="text" name="telefone" id="telefone" maxlength="15" size="20"></p>
+                                    <p>Endereço:<input type="text" name="endereco" maxlength="40" size="40"></p>
+                                    
+                                    <hr>
+                            
+                                    <p>Informe senha:<input type="password" name="senha" maxlength="8" size="8">
+                                       Confirmar senha:<input type="password" name="confirma_senha" maxlength="8" size="8"><br>
+                                       <!--
+                                       <input type="button" value="Confirmar senha" onclick="validarSenha()" class="btn btn-secondary" style="width: 100%">
+                                       -->
+                                    </p>
+                                                                    
+                                    <input type="submit" onclick="return validar()" class="btn btn-secondary" style="width: 100%">
+                                                                    
+                                </fieldset>
+                            
+                            </form>
+
+                            <!--
                             <form>
                                 <div class="mb-3">
                                     <label for="nome">Nome Completo:</label>
@@ -361,6 +510,7 @@
                                   
                                     <button type="submit" class="btn btn-secondary">ENVIAR</button>
                             </form>
+                        -->
                         </div>
                       </div>
     
