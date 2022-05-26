@@ -1,6 +1,8 @@
 
 25/05/2022
 
+https://coolors.co/palettes/trending
+
 .cinzaClaro
 #d6d6d6
 .amareloClaro
