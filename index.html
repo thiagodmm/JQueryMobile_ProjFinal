@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-    <title>Projeto JQuery Mobile e Bootstrap</title>
+    <title>Interfaces Mobile First - Projeto Final</title>
     <meta charset="utf-8" />
     <meta name="author" content="Thiago de Moura Machado" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,248 +11,67 @@
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap core CSS 
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    -->
 </head>
 <body>
-    <!-- Página 1 -->
-    <div data-role="page" id="pg1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header py-4">
-                        <h4 class="titHeader">JQueryMobile e Bootstrap</h4>
-                        <a class="btn btn-primary btn-sm me-3 btModal" data-bs-toggle="modal" data-bs-target="#myModal">Abrir Modal</a>
-                    </div>
-                    <div class="content">
-                        <div class="row py-1">
-                            <div class="col-md-4">
-                                <a class="btn btMenuOff my-1">Link para página 1</a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="#pg2" class="btn btMenu my-1">Link para página 2</a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="#pg3" class="btn btMenu my-1">Link para página 3</a>
-                            </div>
-                        </div>
-                        <h1 class="py-3">Página 1 título h1</h1>
-                        <img src="img/banner1.jpg" class="img-fluid banHome">
-                        <h5 class="py-3">Sub-título H5 subtítulo H5</h5>
-                        <p><b>Texto em destaque com negrito</b><br>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-                    </div>
-                    <div class="footer text-center py-4">
-                        <h4>Rodapé</h4>
-                        <p class="txtPeq1"><small>2022 Thiago Machado - Direitos Reservados</small></p>
-                    </div>
-                </div>
+
+    <div class="container-fluid cinzaMedioBG branco">
+        <div class="row py-2">
+            <div class="col-md-6 headerLogo">
+                <b>TDS SenacTech Noite</b>
+            </div>
+            <div class="col-md-6 headerMenu">
+                <b><a class="linkAmarelo">MENU</a></b>
             </div>
         </div>
     </div>
-    <!-- Página 2 -->
-    <div data-role="page" id="pg2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header py-4">
-                        <h4 class="titHeader">JQueryMobile e Bootstrap</h4>
-                        <a class="btn btn-primary btn-sm me-3 btModal" data-bs-toggle="modal" data-bs-target="#myModal">Abrir Modal</a>
+
+    <div class="container">
+        <div class="row amareloBG">
+            <div class="col-md-12 titPrincipal">
+                <h1>Interfaces Mobile First</h1>
+                <h3>Projeto Final</h3>
+            </div>
+        </div>
+        <div class="row amareloClaroBG">
+            <div class="col-md-12 titSecundario">
+                <h5>Utilize o Menu no topo para acessar os conteúdos.</h5>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-md-8">
+
+                <div class="card">
+                    <div class="card-body">
+                        <p>
+                            <b>Conteúdo do Projeto:</b>
+                            Seções que sejam acessadas através de menus do tipo Panel;<br>
+                            <b>Seções:</b> CMS, SEO, JQuery Mobile, Formulário de Contato com validações.<br>
+                            <br>
+                            > Sendo o projeto em formato Single Page do JQuery Mobile.<br>
+                            > A ideia deste projeto o estudo e entendimento da incorporação de todas essas tecnologias em um único Projeto.<br>
+                            > Formato de entrega pode ser via Github ou projeto compactado.<br>
+                        </p>
                     </div>
-                    <div class="content">
-                        <div class="row py-1">
-                            <div class="col-md-4">
-                                <a href="#pg1" class="btn btMenu my-1">Link para página 1</a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="btn btMenuOff my-1">Link para página 2</a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="#pg3" class="btn btMenu my-1">Link para página 3</a>
-                            </div>
-                        </div>
-                        <h1 class="py-3">Página 2 título h1</h1>
-                        <img src="img/bannerMenor1.jpg" class="img-fluid banHome">
-                        <h5 class="py-3">Título H5 título título h5</h5>
-                        <div class="row">
-                            <div class="col-md-4 text-center p-3">
-                                <img src="img/ico_navio.png" class="img-fluid icoHome">
-                                <h5 class="pt-3">Navios</h5>
-                                <p class="txtPeq1"><small>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</small></p>
-                            </div>
-                            <div class="col-md-4 text-center p-3">
-                                <img src="img/ico_veleiro.png" class="img-fluid icoHome">
-                                <h5 class="pt-3">Veleiros</h5>
-                                <p class="txtPeq1"><small>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</small></p>
-                            </div>
-                            <div class="col-md-4 text-center p-3">
-                                <img src="img/ico_aviao.png" class="img-fluid icoHome">
-                                <h5 class="pt-3">Avião</h5>
-                                <p class="txtPeq1"><small>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat.</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer text-center py-4">
-                        <h4>Rodapé</h4>
-                        <p class="txtPeq1"><small>2022 Thiago Machado - Direitos Reservados</small></p>
-                    </div>
-                </div>
+                  </div>
+
+            </div>
+            <div class="col-md-4 cinzaEscuroBG branco colDir">
+                <p>
+                    Criar um projeto Front-end que utilize as seguintes tecnologias:<br>
+                    <br>
+                    * HTML;<br>
+                    * CSS;<br>
+                    * JQuery Mobile;<br>
+                    * Bootstrap.<br></p>
+            </div>
+
+        </div>
+        <div class="row cinzaClaroBG">
+            <div class="col-md-12 rodape">
+                <h6>2022 Thiago Machado - &copy; Direitos Reservados.</h6>
             </div>
         </div>
     </div>
-    <!-- Página 3 -->
-    <div data-role="page" id="pg3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header py-4">
-                        <h4 class="titHeader">JQueryMobile e Bootstrap</h4>
-                        <a class="btn btn-primary btn-sm me-3 btModal" data-bs-toggle="modal" data-bs-target="#myModal">Abrir Modal</a>
-                    </div>
-                    <div class="content">
-                        <div class="row py-1">
-                            <div class="col-md-4">
-                                <a href="#pg1" class="btn btMenu my-1">Link para página 1</a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="#pg2" class="btn btMenu my-1">Link para página 2</a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="btn btMenuOff my-1">Link para página 3</a>
-                            </div>
-                        </div>
-                        <h1 class="py-3">Página 3 título h1</h1>
-                        <img src="img/bannerMenor2.jpg" class="img-fluid banHome">
-                        <div class="row">
-                            <div class="col-md-12 p-3">
-                                <h5 class="py-3">As Top 12 Vampiras do Cinema</h5>
-                                <p>
-                                As vampiras têm atraído multidões e entregado emoções desde o surgimento do cinema. Seja horrível Filmes B ou grandes produções, Vampiros vi inúmeras representações na tela que se tornaram clichês. No entanto, no caso de erotismo exagerado e sedução atrevida das mulheres mortas-vivas, nós mal reclamamos. Algumas vampiras são incrivelmente sensuais e carismáticas. Independentemente de seu apelo vir de seus trajes tentadores, sua ferocidade ou seu sotaque, devemos admitir que esses vampiros tornaram os filmes infinitamente mais divertidos. Mas apenas no caso de você estar se perguntando como é chamada uma vampira, suas opções são: vampira ou Vampirette. Aqui está a lista das vampiras mais sexy do cinema.</p>
-                            </div>
 
-                            <div class="col-md-12">
-                                <hr>
-                            </div>
-
-                            <div class="col-md-4 p-3">
-                                <b>12. The Vampire Lovers (1970) - Ingrid Pitt como Carmilla Karnstein</b><br>
-                                <br>
-                                Carmilla Karnstein é uma beldade lésbica sugadora de sangue com um gosto pelos seios de mulheres jovens impressionáveis. Interpretada por Ingrid Pitt, essa vampira sexy meticulosamente estabelece sua teia, atraindo as jovens que se apaixonam por seus encantos. Mas antes que eles percebam, ela cava suas presas profundamente em seus seios. Afinal, quem poderia negar Ingrid Pitt?<br>
-
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <b>11. Bordello of Blood (1996) - Angie Everhart como Lilith</b><br>
-                                <br>
-                                Lilith não é apenas uma sedutora de vampiros, mas ela também dirige um bordel onde todas as mulheres são vampiras também. Seu bordel traz negócios e o sangue de homens luxuriosos. Além disso, este filme é uma comédia completa. Nunca esqueceremos Angie Everhart em uma fantasia de líder de torcida cantando - "2, 4, 6, 8 ... você pode me ver me masturbando".<br>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <b>10. Vampiros (1998) - Sheryl Lee como Katrina</b><br>
-                                <br>
-                                Sheryl Lee, de Twin Peaks fama, interpreta uma prostituta vampira neste filme de John Carpenter. Sua beleza tranquila se traduz no fascínio sedutor de Katrina, mesmo quando ela não está tentando. Este filme segue uma equipe de caçadores de vampiros tentando encontrar uma relíquia que tem o poder de permitir que os vampiros suportem a luz do sol.<br>
-                            </div>
-
-                            <div class="col-md-12">
-                                <hr>
-                            </div>
-
-
-                            <div class="col-md-4 p-3">
-                                <b>9. Vampire Academy (2014) - Zoey Deutch como Rose Hathaway</b><br>
-                                <br>
-                                Esta fantasia - o filme de comédia de 2014 é no mínimo esquecível. No entanto, sua graça salvadora é o vampiro principal interpretado por Zoey Deutch , conhecido por Richard Linklater "Everybody Wants Some !!" Rose não é o clichê e feroz e sanguinário demônio, mas uma Dhampir (meio-vampira) extraordinariamente "humana" e bela.<br>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <b>8. The Lost Boys (1987) - Jami Gertz as Star</b><br>
-                                <br>
-                                "The Lost Boys" é um filme de vampiro agradável em muitos aspectos. No entanto, a imagem mais proeminente que o filme deixa é a do excepcionalmente belo personagem "Star" de Jami Gertz. Embora ela seja uma vampira em sua maioria, poucas pessoas reclamariam se ela os levasse para seu covil. Felizmente, ela volta ao normal no final.<br>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <b>7. The Fearless Vampire Killers (1967) - Sharon Tate como Sarah Shagal</b><br>
-                                <br>
-                                Enquanto dirigia e atuava no filme "The Fearless Vampire Killers", não somente Roman Polanski se apaixonou por Sharon Tate, mas também todas as outras pessoas que viram o filme. Sempre que ela aparece na tela, os espectadores não conseguem deixar de olhar para ela e nada mais. Sarah Shagal revela-se transformada em vampira apenas no final, mas ela tem um apelo erótico ao longo do filme.<br>
-                            </div>
-
-                            <div class="col-md-12">
-                                <hr>
-                            </div>
-
-
-                            <div class="col-md-4 p-3">
-                                <b>6. Byzantium (2012) - Gemma Arterton como Clara</b><br>
-                            <br>
-                            Qualquer coisa com Gemma Arterton é ótimo. Em 'Bizâncio', ela interpreta uma vampira tentando proteger a si mesma e sua filha de outros vampiros terríveis e, no processo, ela inicia um bordel improvisado. Clara é literalmente uma femme fatale e sua aparência sexy enriquece o filme infinitamente.<br>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <b>5. Vampyros Lesbos (1971) - Soledad Miranda como Condessa Nadine Carody</b><br>
-                            <br>
-                            Como Ingrid Pitt em "The Vampire Lovers", a vampira sedutora de Soledad Miranda, Nadine, tem uma sede perpétua por sangue feminino. Ela atrai mulheres jovens por meio de seu ato lésbico atrevido em uma boate em uma ilha remota. Condessa Nadine é o epítome da vampira sedutora a quem ninguém pode recusar.<br>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <b>4. Rainha dos Malditos (2002) - Aaliyah como Rainha Akasha</b><br>
-                            <br>
-                            Aaliyah como a vampira cruel, porém sensual, Rainha Akasha, pode ser o primeiro nome que vem à mente quando você pensa em vampira. Seu traje incrivelmente revelador junto com seu comportamento sensual a tornavam uma das vampiras mais sexy de todos os tempos. Rainha Akasha dançando ao som de rock e, em seguida, alimentando-se de um coração cru, são imagens verdadeiramente inesquecíveis.<br>
-
-                            </div>
-
-                            <div class="col-md-12">
-                                <hr>
-                            </div>
-
-
-                            <div class="col-md-4 p-3">
-                                <b>3. Underworld (2003) - Kate Beckinsale como Selene</b><br>
-                            <br>
-                            A série de filmes "Underworld" é uma das antologias baseadas em vampiros mais populares de todos os tempos. Provavelmente, o maior motivo de seu apelo é o divino Kate Beckinsale A guerreira vampira vestida de couro, Selene. Mesmo caso contrário, Selene está nesta lista porque ela não é tão unidimensional como quase todas as outras vampiras. Kate Beckinsale vai fazer você querer assistir a série inteira em cinco partes, e sem arrependimentos também.<br>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <b>2. De Dusk Till Dawn (1996) - Salma Hayek como Santanico Pandemonium</b><br>
-                            <br>
-                            Salma Hayek em "From Dusk Till Dawn" é a quintessência da vampira-raposa. Este é um dos melhores filmes de vampiros de todos os tempos e Salma Hayek em duas peças seduzindo uma multidão é uma das cenas mais sexy. Santanico Pandemonium é o tipo de criatura erótica rechonchuda pela qual nos entregaríamos com prazer.<br>
-                            </div>
-                            <div class="col-md-4 p-3">
-                                <b>1. Drácula de Bram Stoker (1992) - Monica Bellucci como Noiva de Drácula</b><br>
-                            <br>
-                            Muitas pessoas ficariam felizes em assistir a qualquer coisa com a presença de Monica Bellucci. Seu personagem incrivelmente sensual, mas igualmente feroz em "Drácula" irá obrigá-lo a assistir novamente várias vezes. Mesmo que o filme tenha um elenco estelar com Gary Oldman, Winona Ryder e Anthony Hopkins nele, dificilmente podemos pensar em nada além da Noiva do Drácula. Quem não gostaria de um encontro com ela, mesmo se eles tivessem que enfrentar o próprio Drácula no final?
-                            </div>
-
-                            <div class="col-md-12">
-                                <hr>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    <div class="footer text-center py-4">
-                        <h4>Rodapé</h4>
-                        <p class="txtPeq1"><small>2022 Thiago Machado - Direitos Reservados</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-            <h4 class="modal-title">Modal do Bootstrap</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-            <img src="img/mesa_viajante.jpg" class="img-fluid pb-2">
-            <h5>Legenda da fotografia</h5>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-            </div>
-            <!-- Modal footer -->
-            <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-        </div>
-    </div>
 </body>
 </html>

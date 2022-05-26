@@ -1,6 +1,23 @@
 
 25/05/2022
 
+.cinzaClaro
+#d6d6d6
+.amareloClaro
+#ffee32
+.amarelo
+#ffd100
+.cinzaEscuro
+#202020
+.cinzaMedio
+#333533
+
+
+
+
+
+
+
 Atividade Final da UC - Mobile First
 
 Entrega: 04/06/22

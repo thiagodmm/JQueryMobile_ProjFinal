@@ -1,62 +1,74 @@
-.header {
-    background-color: darkturquoise;
-    color:midnightblue!important;
-    padding-left: 16px;
-}
-.content {
 
+.headerMenu {
+    text-align: right;
 }
-.footer {
-    background-color: darkcyan;
-    color:white;
+.titPrincipal {
+    padding: 64px;
 }
-.titHeader {
-    display: inline;
+.titSecundario {
+    padding: 32px;
 }
-.btMenu {
-    width: 100%;
-    color: white!important;
-    background-color: darkslategrey!important;
+.colDir {
+    padding: 16px;
+}
+.rodape {
     text-align: center;
+    padding: 32px;
 }
-.btMenu:hover {
-    background-color: white!important;
-    color:blue!important;
-    border: 1px solid grey!important;
+
+
+
+.linkAmarelo {
+    color: #ffd100;
+    cursor: pointer;
+    text-decoration: none;
 }
-.btMenuOff {
-    width: 100%;
-    color: gray!important;
-    border: 1px solid grey!important;
-    background-color: lightgray!important;
-    text-align: center;
-    cursor: default!important;
+.linkAmarelo:hover {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: underline;
 }
-.icoHome {
-    width: 20%;
-    height: auto;
+
+
+.cinzaClaroBG {
+    background-color: #d6d6d6;
 }
-.txtPeq1 {
-    line-height: 25px;
+.amareloClaroBG {
+    background-color: #ffee32;
 }
-.banHome {
-    border: 1px solid midnightblue;
+.amareloBG {
+    background-color: #ffd100;
 }
-.btModal {
-    float: right;
+.cinzaEscuroBG {
+    background-color: #202020;
 }
+.cinzaMedioBG {
+    background-color: #333533;
+}
+.branco {
+    color: #ffffff;
+}
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .icoHome {
-        width: 20%;
-        height: auto;
-    }
-    .header {
-        height: 120px;
+    
+    .headerMenu {
         text-align: center;
+        padding: 12px;
     }
-    .btModal {
-        float: none;
-        margin-top: 20px;
+
+    .headerLogo {
+        text-align: center;
+        padding: 12px;
     }
+    .titPrincipal {
+        padding: 16px;
+    }
+    .titSecundario {
+        padding: 18px;
+    }
+
+
 }
